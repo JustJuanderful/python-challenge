@@ -16,7 +16,7 @@ totalVotesWon = []
 numVotes = 0
 
 with open(pollData_csv, newline = "") as csvfile:
-    
+
     csv_reader = csv.reader(csvfile, delimiter = ",")
     csv_header = next(csv_reader)
 
@@ -60,7 +60,7 @@ print("-------------------------")
 print(f"Winner: {winnerCandidate}")
 print("-------------------------")
 
-output = open("output.txt", "w")
+output = open("electionResults.txt", "w")
 line1 = "Election Results"
 line2 = "-------------------------"
 line3 = str(f"Total Votes: {str(numVotes)}")

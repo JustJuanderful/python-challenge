@@ -55,7 +55,7 @@ print(f"Average Change: ${str(round(avgProfChange,2))}")
 print(f"Greatest Increase in Profits: {greatestProfDate} (${str(greatestProfInc)})")
 print(f"Greatest Decrease in Profits: {greatestLossDate} (${str(greatestProfDec)})")
 
-output = open("output.txt", "w")
+output = open("financialAnalysis.txt", "w")
 
 line1 = "Financial Analysis"
 line2 = "----------------------------"
