@@ -1,18 +1,11 @@
 import os
 import csv
 
-# cwd = os.getcwd()  # Get the current working directory (cwd)
-# files = os.listdir(cwd)  # Get all the files in that directory
-# print("Files in %r: %s" % (cwd, files))
-
 pollData_csv = os.path.join("..", "PyPoll", "election_data.csv")
 
 candidateList = []
-
 percentVotesWon = []
-
 totalVotesWon = []
- 
 numVotes = 0
 
 with open(pollData_csv, newline = "") as csvfile:
